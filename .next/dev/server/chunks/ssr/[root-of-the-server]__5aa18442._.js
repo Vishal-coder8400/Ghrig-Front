@@ -309,18 +309,18 @@ const Footer = ()=>{
                                     className: "flex flex-col items-end not-italic",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                            href: "tel:+19999999999",
+                                            href: "tel:+91 97118 25377",
                                             className: "font-semibold text-[#1a1819] text-xs leading-[15.6px] [font-family:'Inter',Helvetica] tracking-[0] whitespace-nowrap hover:underline transition-colors",
-                                            children: "+1 (999) 999-99-99"
+                                            children: "+91 97118 25377"
                                         }, void 0, false, {
                                             fileName: "[project]/components/footer.jsx",
                                             lineNumber: 83,
                                             columnNumber: 15
                                         }, ("TURBOPACK compile-time value", void 0)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                            href: "mailto:info@logoipsum.com",
+                                            href: "mailto:connect@ghrig.in",
                                             className: "[font-family:'Inter',Helvetica] font-semibold text-[#1a1819] text-xs tracking-[0] leading-[15.6px] whitespace-nowrap hover:underline transition-colors",
-                                            children: "info@logoipsum.com"
+                                            children: "connect@ghrig.in"
                                         }, void 0, false, {
                                             fileName: "[project]/components/footer.jsx",
                                             lineNumber: 89,

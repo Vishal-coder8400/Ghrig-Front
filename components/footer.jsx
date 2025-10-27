@@ -81,16 +81,16 @@ export const Footer = () => {
 
             <address className="flex flex-col items-end not-italic">
               <a
-                href="tel:+19999999999"
+                href="tel:+91 97118 25377"
                 className="font-semibold text-[#1a1819] text-xs leading-[15.6px] [font-family:'Inter',Helvetica] tracking-[0] whitespace-nowrap hover:underline transition-colors"
               >
-                +1 (999) 999-99-99
+                +91 97118 25377
               </a>
               <a
-                href="mailto:info@logoipsum.com"
+                href="mailto:connect@ghrig.in"
                 className="[font-family:'Inter',Helvetica] font-semibold text-[#1a1819] text-xs tracking-[0] leading-[15.6px] whitespace-nowrap hover:underline transition-colors"
               >
-                info@logoipsum.com
+                connect@ghrig.in
               </a>
             </address>
           </div>
