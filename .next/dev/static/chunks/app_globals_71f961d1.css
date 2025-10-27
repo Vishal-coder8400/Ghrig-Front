@@ -464,12 +464,20 @@
     top: 65%;
   }
 
+  .top-full {
+    top: 100%;
+  }
+
   .-right-16 {
     right: calc(var(--spacing) * -16);
   }
 
   .right-\[51px\] {
     right: 51px;
+  }
+
+  .left-0 {
+    left: calc(var(--spacing) * 0);
   }
 
   .left-\[5\%\] {
@@ -502,6 +510,14 @@
 
   .z-10 {
     z-index: 10;
+  }
+
+  .z-40 {
+    z-index: 40;
+  }
+
+  .z-50 {
+    z-index: 50;
   }
 
   .col-span-1 {
@@ -1024,6 +1040,10 @@
 
   .bg-\[\#f8fbff\] {
     background-color: #f8fbff;
+  }
+
+  .bg-black {
+    background-color: var(--color-black);
   }
 
   .bg-blue-50 {

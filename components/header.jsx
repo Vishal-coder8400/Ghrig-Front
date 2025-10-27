@@ -4,59 +4,64 @@ import Link from "next/link";
 import Image from "next/image";
 import { IoMenu, IoClose } from "react-icons/io5";
 
-
 export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="w-full bg-[#000000] text-white py-4">
-      <div className="max-w-7xl mx-auto flex justify-between items-center px-6">
+    <header className="w-full bg-black text-white py-4 relative z-50">
+      <div className="max-w-7xl mx-auto flex justify-between items-center px-6 relative">
         
-        {/* Logo */}
-        <div className="flex items-center gap-2 invert">
-          <img src="../assets/images/logo.png" alt="Logo" width={85} height={45} />
+        {/* ✅ Logo section — white background with real colors */}
+        <div className="flex items-center gap-2 relative z-50 bg-white rounded-lg px-2 py-1">
+          <Image
+            src="/assets/images/logo.png" // make sure this file is in /public/assets/images/
+            alt="Logo"
+            width={90}
+            height={45}
+            className="object-contain"
+            priority
+          />
         </div>
 
-        {/* Desktop Navigation - Always visible on desktop */}
+        {/* Desktop Navigation */}
         <nav className="hidden md:flex">
           <ul className="flex items-center gap-10 text-sm font-medium">
-            {/* <li className="hover:text-gray-500 font_family_inter font-medium text-[14px] leading-[22px] text-center cursor-pointer">Home</li> */}
-            <li className="hover:text-gray-500 font_family_inter font-medium text-[14px] leading-[22px] text-center cursor-pointer">Services</li>
-            <li className="hover:text-gray-500 font_family_inter font-medium text-[14px] leading-[22px] text-center cursor-pointer">About Us</li>
-            <li className="hover:text-gray-500 font_family_inter font-medium text-[14px] leading-[22px] text-center cursor-pointer">Contact Us</li>
+            <li className="hover:text-gray-500 cursor-pointer">Services</li>
+            <li className="hover:text-gray-500 cursor-pointer">About Us</li>
+            <li className="hover:text-gray-500 cursor-pointer">Contact Us</li>
           </ul>
         </nav>
 
-        {/* CTA Buttons - Desktop */}
+        {/* CTA Buttons */}
         <div className="hidden md:flex gap-3">
           <Link
             href="#"
-            className="px-7 py-2.5 font_family_inter font-medium text-[15px] leading-[22px] text-center bg-[#6945ED] rounded-4xl text-white hover:bg-purple-500 hover:text-white transition"
+            className="px-7 py-2.5 text-[15px] bg-[#6945ED] rounded-4xl text-white hover:bg-purple-500 transition"
           >
             Login
           </Link>
           <Link
             href="#"
-            className="px-7 py-2.5 font_family_inter font-medium text-[15px] leading-[22px] text-center bg-white rounded-4xl text-[#6945ED] hover:bg-purple-500 hover:text-white transition"
+            className="px-7 py-2.5 text-[15px] bg-white rounded-4xl text-[#6945ED] hover:bg-purple-500 hover:text-white transition"
           >
             Register
           </Link>
         </div>
 
-        {/* Hamburger Icon — Mobile Only */}
+        {/* Hamburger Icon (Mobile) */}
         <button
-          className="md:hidden text-3xl"
+          className="md:hidden text-3xl z-50 relative"
           onClick={() => setOpen(!open)}
         >
           {open ? <IoClose /> : <IoMenu />}
         </button>
       </div>
 
-      {/* Mobile Navigation - Only shows when hamburger is clicked */}
+      {/* Mobile Navigation */}
       {open && (
-        <div className="md:hidden bg-[#0a0a0a] px-6 pt-2 pb-4" id="mobile_nav">
+        <div className="md:hidden bg-[#0a0a0a] px-6 pt-2 pb-4 absolute top-full left-0 w-full z-40">
           <ul className="flex flex-col gap-3 font-medium">
-            <li className="hover:text-gray-400 cursor-pointer font_family_inter font-medium leading-[22px]  py-2">Home</li>
+            <li className="hover:text-gray-400 cursor-pointer py-2">Home</li>
             <li className="hover:text-purple-400 cursor-pointer py-2">Jobs</li>
             <li className="hover:text-purple-400 cursor-pointer py-2">About Us</li>
             <li className="hover:text-purple-400 cursor-pointer py-2">Blog</li>
