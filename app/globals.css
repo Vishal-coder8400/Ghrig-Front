@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+
+@font-face{
+  font-family: "Plus Jakarta Sans", sans-serif;
+  src: url('../public/assets/fonts/jakarta_sans/PlusJakartaSans-VariableFont_wght.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: "Inter", sans-serif;
+  src: url("../public/assets/fonts/inter/Inter-Italic-VariableFont_opsz\,wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+   font-family: 'SF Pro Display';
+  src: url('../public/assets/fonts/pro_display/SFPRODISPLAYREGULAR.OTF') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+
+}
+.font_family_display{
+     font-family: 'SF Pro Display';
+
+}
+.font_family_jakarta {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+.font_family_inter{
+    font-family: "Inter", sans-serif;
+
+}
+.card1{
+  background-image: url("../public/assets/images/jobCat1.png");
+  height:7vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Accelerate_job{
+   background-image: url("../public/assets/images/accelrate-your-job.png");
+  height:60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 23px;
+}
+.card2{
+  background-image: url("../public/assets/images/jobCat2.png");
+  height:7vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card3{
+  background-image: url("../public/assets/images/jobCat3.png");
+  height:7vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.slick-slide img{
+  width: 100px !important;
+  height:50% !important;
+}
+.bg-section-mobile{
+  background-image: url("../public/assets/images/banner-main-mobile.png");
+  height: 109vh;
+ 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.bg-section {
+  background-image: url("../public/assets/images/banner-main.png");
+  height: 130vh;
+ 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+@media screen and (max-width:500px){
+  .Accelerate_job{
+   background-image: url("../public/assets/images/accerate-mobile.png") !important;
+  height:50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 23px;
+}
+#mobile_nav{
+position: absolute;
+z-index: 9999;
+width: 100%;
+
+}
+}
+@media screen and (max-width:1050px) and (min-width:600px){
+  .bg-section {
+  
+    height: 529px;
+}
+
+}
