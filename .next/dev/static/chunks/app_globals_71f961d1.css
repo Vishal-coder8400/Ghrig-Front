@@ -420,10 +420,6 @@
     pointer-events: none;
   }
 
-  .visible {
-    visibility: visible;
-  }
-
   .absolute {
     position: absolute;
   }
@@ -1004,10 +1000,6 @@
 
   .bg-\[\#0a0a0a\] {
     background-color: #0a0a0a;
-  }
-
-  .bg-\[\#000000\] {
-    background-color: #000;
   }
 
   .bg-\[\#1a1819\] {
